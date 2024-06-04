@@ -1,0 +1,112 @@
+ros-humble-actionlib-msgs (4.2.4-1bullseye) bullseye; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Mon, 20 May 2024 16:00:00 -0000
+
+ros-humble-actionlib-msgs (4.2.3-1bullseye) bullseye; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Sun, 08 Jan 2023 16:00:00 -0000
+
+ros-humble-actionlib-msgs (4.2.2-1bullseye) bullseye; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Wed, 18 May 2022 16:00:00 -0000
+
+ros-humble-actionlib-msgs (4.2.1-1bullseye) bullseye; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Wed, 30 Mar 2022 16:00:00 -0000
+
+ros-humble-actionlib-msgs (4.2.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Tue, 29 Mar 2022 16:00:00 -0000
+
+ros-humble-actionlib-msgs (4.1.1-1bullseye) bullseye; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Fri, 25 Mar 2022 16:00:00 -0000
+
+ros-humble-actionlib-msgs (4.1.0-1bullseye) bullseye; urgency=high
+
+  * Interface packages should fully <depend> on the interface packages that they depend on (#173 <https://github.com/ros2/common_interfaces/issues/173>)
+  * Contributors: Grey
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Mon, 28 Feb 2022 16:00:00 -0000
+
+ros-humble-actionlib-msgs (4.0.0-1bullseye) bullseye; urgency=high
+
+  * Update maintainers to Geoffrey Biggs and Tully Foote (#163 <https://github.com/ros2/common_interfaces/issues/163>)
+  * Contributors: Audrow Nash
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Mon, 13 Dec 2021 16:00:00 -0000
+
+ros-humble-actionlib-msgs (3.0.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Mon, 23 Aug 2021 16:00:00 -0000
+
+ros-humble-actionlib-msgs (2.3.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Tue, 10 Aug 2021 16:00:00 -0000
+
+ros-humble-actionlib-msgs (2.2.3-1bullseye) bullseye; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Mon, 26 Apr 2021 16:00:00 -0000
+
+ros-humble-actionlib-msgs (2.2.2-1bullseye) bullseye; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Mon, 05 Apr 2021 16:00:00 -0000
+
+ros-humble-actionlib-msgs (2.2.1-1bullseye) bullseye; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Sun, 24 Jan 2021 16:00:00 -0000
+
+ros-humble-actionlib-msgs (2.2.0-1bullseye) bullseye; urgency=high
+
+  * Update package maintainers. (#132 <https://github.com/ros2/common_interfaces/issues/132>)
+  * Contributors: Michel Hidalgo
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Wed, 09 Dec 2020 16:00:00 -0000
+
+ros-humble-actionlib-msgs (2.1.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Mon, 20 Jul 2020 16:00:00 -0000
+
+ros-humble-actionlib-msgs (2.0.2-1bullseye) bullseye; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Mon, 20 Jul 2020 16:00:00 -0000
+
+ros-humble-actionlib-msgs (2.0.1-1bullseye) bullseye; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Mon, 25 May 2020 16:00:00 -0000
+
+ros-humble-actionlib-msgs (1.0.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Tue, 19 May 2020 16:00:00 -0000
+
+
