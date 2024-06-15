@@ -1,3 +1,39 @@
+## common_interfaces (jazzy) - 5.3.5-2
+
+The packages in the `common_interfaces` repository were released into the `jazzy` distro by running `/home/z572/gits/revyos-ros/venv/bin/bloom-release -r jazzy common_interfaces --override-release-repository-push-url git@github.com:revyos-ros/common_interfaces-release.git` on `Sat, 15 Jun 2024 08:10:56 -0000`
+
+These packages were released:
+- `actionlib_msgs`
+- `common_interfaces`
+- `diagnostic_msgs`
+- `geometry_msgs`
+- `nav_msgs`
+- `sensor_msgs`
+- `sensor_msgs_py`
+- `shape_msgs`
+- `std_msgs`
+- `std_srvs`
+- `stereo_msgs`
+- `trajectory_msgs`
+- `visualization_msgs`
+
+Version of package(s) in repository `common_interfaces`:
+
+- upstream repository: https://github.com/ros2/common_interfaces.git
+- release repository: https://github.com/revyos-ros/common_interfaces-release.git
+- rosdistro version: `5.3.5-1`
+- old version: `5.3.5-1`
+- new version: `5.3.5-2`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## common_interfaces (iron) - 5.0.1-1
 
 The packages in the `common_interfaces` repository were released into the `iron` distro by running `/usr/bin/bloom-release --rosdistro iron --track iron common_interfaces` on `Mon, 20 May 2024 22:24:15 -0000`
