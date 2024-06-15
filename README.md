@@ -1,11 +1,12 @@
-# stereo_msgs
+# common_interfaces
+A set of packages which contain common interface files (.msg and .srv).
 
-This package provides a message for describing a disparity image.
 
-For more information about ROS 2 interfaces, see [docs.ros.org](https://docs.ros.org/en/rolling/Concepts/About-ROS-Interfaces.html).
+## Purpose
 
-## Messages (.msg)
-* [DisparityImage](msg/DisparityImage.msg): A floating point disparity image with metadata.
+Isolating the messages to communicate between stacks in a shared dependency allows nodes in dependent stacks to communicate without requiring dependencies upon each other.
+This repository has been designed to contain the most common messages used between multiple packages to provide a shared dependency which will eliminate a problematic circular dependency.
 
-## Quality Declaration
-This package claims to be in the **Quality Level 1** category, see the [Quality Declaration](QUALITY_DECLARATION.md) for more details.
+## Contributing 
+
+For how to contribute see [CONTRIBUTING.md](CONTRIBUTING.md)
