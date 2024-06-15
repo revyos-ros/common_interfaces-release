@@ -2,15 +2,50 @@
 Changelog for package geometry_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-5.0.1 (2024-05-21)
+5.3.5 (2024-04-24)
 ------------------
-* Create new messages with all fields needed to define a velocity and transform it  (`#240 <https://github.com/ros2/common_interfaces/issues/240>`_) (`#250 <https://github.com/ros2/common_interfaces/issues/250>`_)
+* Remove references to index.ros.org. (`#244 <https://github.com/ros2/common_interfaces/issues/244>`_)
+* Contributors: Chris Lalancette
+
+5.3.4 (2024-04-16)
+------------------
+
+5.3.3 (2024-04-10)
+------------------
+
+5.3.2 (2024-04-10)
+------------------
+* Create new messages with all fields needed to define a velocity and transform it  (`#240 <https://github.com/ros2/common_interfaces/issues/240>`_)
   Co-authored-by: Dr. Denis <denis@stoglrobotics.de>
   Co-authored-by: Addisu Z. Taddese <addisuzt@intrinsic.ai>
   Co-authored-by: Tully Foote <tullyfoote@intrinsic.ai>
-  (cherry picked from commit 74137fc6971ac7d6420248b4394cca977fb5a887)
-  Co-authored-by: Alejandro Hernández Cordero <alejandro@openrobotics.org>
-* Contributors: mergify[bot]
+* Clarify the license. (`#241 <https://github.com/ros2/common_interfaces/issues/241>`_)
+  In particular, every package in this repository is Apache 2.0
+  licensed except for sensor_msgs_py.  So move the CONTRIBUTING.md
+  and LICENSE files down into the individual packages, and
+  make sure that sensor_msgs_py has the correct CONTRIBUTING.md
+  file (it already had the correct LICENSE file).
+* Contributors: Alejandro Hernández Cordero, Chris Lalancette
+
+5.3.1 (2024-03-28)
+------------------
+
+5.3.0 (2024-01-24)
+------------------
+* adding IDs to geometry_msgs/Polygon, PolygonStamped (`#232 <https://github.com/ros2/common_interfaces/issues/232>`_)
+* Contributors: Steve Macenski
+
+5.2.2 (2023-12-26)
+------------------
+
+5.2.1 (2023-11-06)
+------------------
+
+5.2.0 (2023-06-07)
+------------------
+
+5.1.0 (2023-04-27)
+------------------
 
 5.0.0 (2023-04-11)
 ------------------

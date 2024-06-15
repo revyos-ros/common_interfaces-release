@@ -147,7 +147,8 @@ def read_points_numpy(
     :param reshape_organized_cloud: Returns the array as an 2D organized point cloud if set.
     :return: Numpy array containing all points.
     """
-    assert all(cloud.fields[0].datatype == field.datatype for field in cloud.fields[1:]), \
+    assert all(cloud.fields[0].datatype == field.datatype for field in cloud.fields[1:]
+               if field_names is None or field.name in field_names), \
         'All fields need to have the same datatype. Use `read_points()` otherwise.'
     structured_numpy_array = read_points(
         cloud, field_names, skip_nans, uvs, reshape_organized_cloud)
@@ -237,7 +238,8 @@ def dtype_from_fields(fields: Iterable[PointField], point_step: Optional[int] = 
 def create_cloud(
         header: Header,
         fields: Iterable[PointField],
-        points: Iterable) -> PointCloud2:
+        points: Iterable,
+        point_step: Optional[int] = None) -> PointCloud2:
     """
     Create a sensor_msgs.msg.PointCloud2 message.
 
@@ -248,6 +250,8 @@ def create_cloud(
                    for each point, with the elements of each iterable being the
                    values of the fields for that point (in the same order as
                    the fields parameter)
+    :param point_step: Point step size in bytes. Calculated from the given fields by default.
+                       (Type: optional of integer)
     :return: The point cloud as sensor_msgs.msg.PointCloud2
     """
     # Check if input is numpy array
@@ -260,9 +264,9 @@ def create_cloud(
             # Convert unstructured to structured array
             points = unstructured_to_structured(
                 points,
-                dtype=dtype_from_fields(fields))
+                dtype=dtype_from_fields(fields, point_step))
         else:
-            assert points.dtype == dtype_from_fields(fields), \
+            assert points.dtype == dtype_from_fields(fields, point_step), \
                 'PointFields and structured NumPy array dtype do not match for all fields! \
                     Check their field order, names and types.'
     else:
@@ -270,7 +274,7 @@ def create_cloud(
         points = np.array(
             # Points need to be tuples in the structured array
             list(map(tuple, points)),
-            dtype=dtype_from_fields(fields))
+            dtype=dtype_from_fields(fields, point_step))
 
     # Handle organized clouds
     assert len(points.shape) <= 2, \
