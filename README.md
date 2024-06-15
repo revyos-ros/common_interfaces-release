@@ -1,12 +1,22 @@
-# common_interfaces
-A set of packages which contain common interface files (.msg and .srv).
+# nav_msgs
 
+This package provides several messages and services for robotic navigation.
 
-## Purpose
+For more information about the navigation2 stack in ROS 2, see https://ros-planning.github.io/navigation2/.
 
-Isolating the messages to communicate between stacks in a shared dependency allows nodes in dependent stacks to communicate without requiring dependencies upon each other.
-This repository has been designed to contain the most common messages used between multiple packages to provide a shared dependency which will eliminate a problematic circular dependency.
+For more information about ROS 2 interfaces, see [docs.ros.org](https://docs.ros.org/en/rolling/Concepts/About-ROS-Interfaces.html).
 
-## Contributing 
+## Messages (.msg)
+* [GridCells](msg/GridCells.msg): An array of cells in a 2D grid.
+* [MapMetaData](msg/MapMetaData.msg): Basic information about the characteristics of the OccupancyGrid.
+* [OccupancyGrid](msg/OccupancyGrid.msg): Represents a 2-D grid map, in which each cell represents the probability of occupancy.
+* [Odometry](msg/Odometry.msg): This represents an estimate of a position and velocity in free space.
+* [Path](msg/Path.msg): An array of poses that represents a Path for a robot to follow.
 
-For how to contribute see [CONTRIBUTING.md](CONTRIBUTING.md)
+## Services (.srv)
+* [GetMap](srv/GetMap.srv): Get the map as a nav_msgs/OccupancyGrid.
+* [GetPlan](srv/GetPlan.srv): Get a plan from the current position to the goal Pose.
+* [SetMap](srv/SetMap.srv): Set a new map together with an initial pose.
+
+## Quality Declaration
+This package claims to be in the **Quality Level 2** category, see the [Quality Declaration](QUALITY_DECLARATION.md) for more details.
