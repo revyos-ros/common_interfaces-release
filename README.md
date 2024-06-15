@@ -1,12 +1,14 @@
-# common_interfaces
-A set of packages which contain common interface files (.msg and .srv).
+# std_srvs
+
+This package provides several service definitions for standard but simple ROS services.
+
+For more information about ROS 2 interfaces, see [docs.ros.org](https://docs.ros.org/en/rolling/Concepts/About-ROS-Interfaces.html).
+
+## Services (.srv)
+* [Empty.srv](srv/Empty.srv): A service containing an empty request and response.
+* [SetBool.srv](srv/SetBool.srv): Service to set a boolean state to true or false, for enabling or disabling hardware for example.
+* [Trigger.srv](srv/Trigger.srv): Service with an empty request header used for triggering the activation or start of a service.
 
 
-## Purpose
-
-Isolating the messages to communicate between stacks in a shared dependency allows nodes in dependent stacks to communicate without requiring dependencies upon each other.
-This repository has been designed to contain the most common messages used between multiple packages to provide a shared dependency which will eliminate a problematic circular dependency.
-
-## Contributing 
-
-For how to contribute see [CONTRIBUTING.md](CONTRIBUTING.md)
+## Quality Declaration
+This package claims to be in the **Quality Level 1** category, see the [Quality Declaration](QUALITY_DECLARATION.md) for more details.
