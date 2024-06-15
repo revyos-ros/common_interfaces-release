@@ -1,25 +1,12 @@
-# visualization_msgs
+# common_interfaces
+A set of packages which contain common interface files (.msg and .srv).
 
-This package provides messages for visualizing 3D information in ROS GUI programs, particularly RViz.
 
-These messages were ported from ROS 1 and for now the [visualization_msgs wiki](http://wiki.ros.org/visualization_msgs) is still a good place for information about these messages and how they are used.
+## Purpose
 
-For more information about ROS 2 interfaces, see [docs.ros.org](https://docs.ros.org/en/rolling/Concepts/About-ROS-Interfaces.html).
+Isolating the messages to communicate between stacks in a shared dependency allows nodes in dependent stacks to communicate without requiring dependencies upon each other.
+This repository has been designed to contain the most common messages used between multiple packages to provide a shared dependency which will eliminate a problematic circular dependency.
 
-## Messages (.msg)
-* [ImageMarker](msg/ImageMarker.msg): A marker to overlay on displayed images.
-* [InteractiveMarker](msg/InteractiveMarker.msg): A user interaction marker for manipulating objects in 3-dimensional space in GUI programs, like RViz.
-* [InteractiveMarkerControl](msg/InteractiveMarkerControl.msg): Represents a control that is to be displayed together with an interactive marker.
-* [InteractiveMarkerFeedback](msg/InteractiveMarkerFeedback.msg): Feedback message sent back from the GUI, e.g. when the status of an interactive marker was modified by the user.
-* [InteractiveMarkerInit](msg/InteractiveMarkerInit.msg): Used for sending initial interactive marker descriptions.
-* [InteractiveMarkerPose](msg/InteractiveMarkerPose.msg): The pose of the interactive marker.
-* [InteractiveMarkerUpdate](msg/InteractiveMarkerUpdate.msg): The top-level message for sending data from the interactive marker server to the client (i.e. rviz).
-* [Marker](msg/Marker.msg): A non-interactive marker for displaying annotations in 3-dimensional space.
-* [MarkerArray](msg/MarkerArray.msg): An array of markers.
-* [MenuEntry](msg/MenuEntry.msg): Used to describe the menu/submenu/subsubmenu/etc tree.
+## Contributing 
 
-## Services (.srv)
-* [GetInteractiveMarkers.srv](srv/GetInteractiveMarkers.srv): Get the currently available interactive markers.
-
-## Quality Declaration
-This package claims to be in the **Quality Level 2** category, see the [Quality Declaration](QUALITY_DECLARATION.md) for more details.
+For how to contribute see [CONTRIBUTING.md](CONTRIBUTING.md)
