@@ -1,12 +1,14 @@
-# common_interfaces
-A set of packages which contain common interface files (.msg and .srv).
+# shape_msgs
 
+This package provides several messages and services for describing 3-dimensional shapes.
 
-## Purpose
+For more information about ROS 2 interfaces, see [docs.ros.org](https://docs.ros.org/en/rolling/Concepts/About-ROS-Interfaces.html).
 
-Isolating the messages to communicate between stacks in a shared dependency allows nodes in dependent stacks to communicate without requiring dependencies upon each other.
-This repository has been designed to contain the most common messages used between multiple packages to provide a shared dependency which will eliminate a problematic circular dependency.
+## Messages (.msg)
+* [Mesh](msg/Mesh.msg): Holds information describing a mesh for visualization and collision detections.
+* [MeshTriangle](msg/MeshTriangle.msg): A single triangle of a mesh.
+* [Plane](msg/Plane.msg): Representation of a plane, using the plane equation ax + by + cz + d = 0.
+* [SolidPrimitive](msg/SolidPrimitive.msg): Describe a simple shape primitive like a box, a sphere, a cylinder, and a cone.
 
-## Contributing 
-
-For how to contribute see [CONTRIBUTING.md](CONTRIBUTING.md)
+## Quality Declaration
+This package claims to be in the **Quality Level 1** category, see the [Quality Declaration](QUALITY_DECLARATION.md) for more details.
