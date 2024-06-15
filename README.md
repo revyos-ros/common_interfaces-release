@@ -1,12 +1,17 @@
-# common_interfaces
-A set of packages which contain common interface files (.msg and .srv).
+# diagnostic_msgs
 
+This package provides several messages and services for ROS node diagnostics.
 
-## Purpose
+For more information about ROS 2 interfaces, see [docs.ros.org](https://docs.ros.org/en/rolling/Concepts/About-ROS-Interfaces.html).
 
-Isolating the messages to communicate between stacks in a shared dependency allows nodes in dependent stacks to communicate without requiring dependencies upon each other.
-This repository has been designed to contain the most common messages used between multiple packages to provide a shared dependency which will eliminate a problematic circular dependency.
+## Messages (.msg)
+* [DiagnosticArray](msg/DiagnosticArray.msg): Used to send diagnostic information about the state of the robot.
+* [DiagnosticStatus](msg/DiagnosticStatus.msg): Holds the status of an individual component of the robot.
+* [KeyValue](msg/KeyValue.msg): Associates diagnostic values with their labels.
 
-## Contributing 
+## Services (.srv)
+* [AddDiagnostics](srv/AddDiagnostics.srv): Used as part of the process for loading analyzers at runtime, not for use as a standalone service.
+* [SelfTest](srv/SelfTest.srv): Call this service to perform a diagnostic check.
 
-For how to contribute see [CONTRIBUTING.md](CONTRIBUTING.md)
+## Quality Declaration
+This package claims to be in the **Quality Level 1** category, see the [Quality Declaration](QUALITY_DECLARATION.md) for more details.
