@@ -1,0 +1,12 @@
+Source: ros-humble-common-interfaces
+Section: misc
+Priority: optional
+Maintainer: Geoffrey Biggs <geoff@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), ros-humble-ament-cmake, ros-humble-ament-lint-auto <!nocheck>, ros-humble-ament-lint-common <!nocheck>, ros-humble-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-humble-common-interfaces
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-actionlib-msgs, ros-humble-builtin-interfaces, ros-humble-diagnostic-msgs, ros-humble-geometry-msgs, ros-humble-nav-msgs, ros-humble-sensor-msgs, ros-humble-shape-msgs, ros-humble-std-msgs, ros-humble-std-srvs, ros-humble-stereo-msgs, ros-humble-trajectory-msgs, ros-humble-visualization-msgs, ros-humble-ros-workspace
+Description: common_interfaces contains messages and services that are widely used by other ROS packages.
