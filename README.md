@@ -1,2 +1,12 @@
-This package is **deprecated** and exists to support bridging ROS 1 action topics.
-For ROS 2 actions, see [action_msgs](https://github.com/ros2/rcl_interfaces/tree/master/action_msgs).
+# common_interfaces
+A set of packages which contain common interface files (.msg and .srv).
+
+
+## Purpose
+
+Isolating the messages to communicate between stacks in a shared dependency allows nodes in dependent stacks to communicate without requiring dependencies upon each other.
+This repository has been designed to contain the most common messages used between multiple packages to provide a shared dependency which will eliminate a problematic circular dependency.
+
+## Contributing 
+
+For how to contribute see [CONTRIBUTING.md](CONTRIBUTING.md)
