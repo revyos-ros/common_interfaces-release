@@ -1,0 +1,12 @@
+Source: ros-jazzy-common-interfaces
+Section: misc
+Priority: optional
+Maintainer: Tully Foote <tfoote@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), ros-jazzy-ament-cmake, ros-jazzy-ament-lint-auto <!nocheck>, ros-jazzy-ament-lint-common <!nocheck>, ros-jazzy-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-common-interfaces
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jazzy-actionlib-msgs, ros-jazzy-builtin-interfaces, ros-jazzy-diagnostic-msgs, ros-jazzy-geometry-msgs, ros-jazzy-nav-msgs, ros-jazzy-sensor-msgs, ros-jazzy-shape-msgs, ros-jazzy-std-msgs, ros-jazzy-std-srvs, ros-jazzy-stereo-msgs, ros-jazzy-trajectory-msgs, ros-jazzy-visualization-msgs, ros-jazzy-ros-workspace
+Description: common_interfaces contains messages and services that are widely used by other ROS packages.
